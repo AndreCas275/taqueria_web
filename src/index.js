@@ -28,13 +28,12 @@ app.engine('.hbs', exhbs({
 app.set('view engine', '.hbs');
 
 //Middleware
-//** */
-//app.use(session({
-//    secret: 'blablablablablablablablablablablabla',
-//    resave: false,
-//    saveUninitialized: false,
-//    store: new MySQLStore(database)
-//}))
+app.use(session({
+    secret: 'blablablablablablablablablablablabla',
+    resave: false,
+    saveUninitialized: false,
+    store: new MySQLStore(database)
+}))
 app.use(flash());
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
