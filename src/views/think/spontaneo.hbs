@@ -1,0 +1,23 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each listar}}
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p class="m-2">{{description_thi}}</p>
+                        <p>{{timeago created_at_thi}}</p>
+                        <a href="/pensamientos/delete/{{id_thi}}" class="btn btn-danger">Eliminar</a>
+                        <a href="/pensamientos/editar/{{id_thi}}" class="btn btn-secondary">Editar</a>
+                    </div>
+                </div>
+            </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No hay ningun pensamiento guardado</p>
+                <a href="/pensamientos/agregar">Crea uno</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

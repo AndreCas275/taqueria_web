@@ -1,0 +1,52 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/linker/agregar" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Nombre_hbs" placeholder="Cliente" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Pedido</label>
+                            </div>
+                            <select class="custom-select" name="Pedido_hbs" type="button" id="inputGroupSelect01">
+                                <option selected disabled class="alert alert-primary">Elige</option>
+                                <option value="Tacos de Arrachera" class="alert alert-secondary">Tacos de Arrachera</option>
+                                <option value="Tostadas de Arrachera" class="alert alert-secondary">Tostadas de Arrachera</option>
+                                <option value="Tortas de Arrachera" class="alert alert-secondary">Tortas de Arrachera</option>
+                                <option value="Tacos de Cochinita" class="alert alert-danger">Tacos de Cochinita</option>
+                                <option value="Tostadas de Cochinita" class="alert alert-danger">Tostadas de Cochinita</option>
+                                <option value="Tortas de Cochinita" class="alert alert-danger">Tortas de Cochinita</option>
+                                <option value="Tortas de Chilaquiles" class="alert alert-success">Tortas de Chilaquiles</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="Cantidad_hbs" placeholder="Cuantos?" min="1" max="20">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Papas</label>
+                            </div>
+                            <select class="custom-select" name="Papas_hbs" type="button" id="inputGroupSelect01">
+                                <option selected disabled class="alert alert-primary">Elige</option>
+                                <option value="Con papas" class="alert alert-warning">Con papas</option>
+                                <option value="Sin papas" class="alert alert-warning">Sin papas</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-info btn-block"> 
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+npm init --yes
+npm i express express-handlebars express-session mysql express-mysql-session 
+npm i morgan bcryptjs passport passport-local timeago.js 
+npm i connect-flash express-validator
+
+npm i nodemon -D
+
+cd C:\Program Files\MySQL\MySQL Server 5.7\bin
+mysql -u root -p

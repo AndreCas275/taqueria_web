@@ -1,0 +1,164 @@
+{{#if Nothing}}
+    {{#if VF1}}
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">{{first.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{first.pedido_ordenes}}: {{first.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{first.papas_ordenes}}, ordenado hace: {{timeago first.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    {{/if}}
+    {{#if VF2}}
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">{{first.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{first.pedido_ordenes}}: {{first.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{first.papas_ordenes}}, ordenado hace: {{timeago first.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header">{{second.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{second.pedido_ordenes}}: {{second.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{second.papas_ordenes}}, ordenado hace: {{timeago second.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    {{else}}
+    {{/if}}
+    {{#if VF3}}
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">{{first.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{first.pedido_ordenes}}: {{first.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{first.papas_ordenes}}, ordenado hace: {{timeago first.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header">{{second.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{second.pedido_ordenes}}: {{second.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{second.papas_ordenes}}, ordenado hace: {{timeago second.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">{{third.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{third.pedido_ordenes}}: {{third.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{third.papas_ordenes}}, ordenado hace: {{timeago third.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    {{else}}
+    {{/if}}
+    {{#if VF4}}
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">{{first.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{first.pedido_ordenes}}: {{first.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{first.papas_ordenes}}, ordenado hace: {{timeago first.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header">{{second.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{second.pedido_ordenes}}: {{second.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{second.papas_ordenes}}, ordenado hace: {{timeago second.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">{{third.nombre_ordenes}}</div>
+                    <div class="card-body">  
+                        <h3 class="card-title text-upercase">
+                                    {{third.pedido_ordenes}}: {{third.catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{third.papas_ordenes}}, ordenado hace: {{timeago third.tiempoAtras}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    {{else}}
+    {{/if}}
+{{else}}
+{{/if}}
+<div id="mi-div">
+<div class="container p-4">
+    <div class="row">
+        {{#each lista}}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">{{nombre_ordenes}}</div>
+                    <div class="card-body">
+                        <h3 class="card-title text-upercase">
+                                    {{pedido_ordenes}}: {{catidad_ordenes}}
+                                </h3>
+                        <p class="card-text">{{papas_ordenes}}, ordenado hace: {{timeago tiempoAtras}} </p>
+                        <a href="/linker/delete/{{id}}" class="btn btn-danger">Eliminar</a>
+                        <a href="/linker/editar/{{id}}" class="btn btn-secondary">Editar</a>
+                    </div>
+                </div>
+            </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No hay ningun pedido en espera</p>
+                <a href="/linker/agregar">Comienza a pedir</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+</div>
+
+<script>
+		setInterval(function(){
+			location.reload();
+		}, 10000);
+	</script>

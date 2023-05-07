@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los de Cochinita</title>
+    <!-- BOOTSTRAP 4 -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <!-- LITER THEME -->
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- ANIME.CSS 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">-->
+    {{!--Styles--}}
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Chart.css">
+    <link rel="stylesheet" href="/css/Chart.min.css">
+</head>
+
+<body>
+    {{>navigation}}
+    {{>message}}
+    {{{body}}}
+
+    <script>
+        function ocultarDiv() {
+            document.getElementById("Magia").style.display = "none";
+        }
+        setTimeout(ocultarDiv, 3000);
+    </script>
+    {{!--Bootstrap scripts--}}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    {{!--font awesome--}}
+    <script src="https://kit.fontawesome.com/1549d9ff1d.js" crossorigin="anonymous"></script>
+    {{!--Sockets--}}
+    <script src="/socket.io/socket.io.js"></script>
+    {{!--Chart CSS--}}
+    <script src="/js/Chart.bundle.js"></script>
+    <script src="/js/Chart.bundle.min.js"></script>
+    <script src="/js/Chart.js"></script>
+    <script src="/js/Chart.min.js"></script>
+    <script type="text/javascript" src="/js/graficas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    {{#if user}}
+    <a class="navbar-brand" href="/perfil">Inicio</a>
+    {{else}}
+    <a class="navbar-brand" href="/">Inicio</a>
+    {{/if}}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Accesos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!--<a class="dropdown-item" href="/pensamientos/thinkear">Todas tus pensamientos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/pensamientos/agregar">Agregar pensamientos</a>
+            <div class="dropdown-divider"></div>-->
+            <a class="dropdown-item" href="/linker/linkear">Todas tus ordenes</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/linker/agregar">Adregar ordenes</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/logout">Cerrar sesion</a>
+          </div>
+        </li>
+        {{else}}
+          <li class="nav-item">
+            <a href="/ingreso" class="nav-link">Ingresar</a>
+          </li>
+          <li>
+            <a href="/registro" class="nav-link">Registrarse</a>
+          </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>
