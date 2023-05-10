@@ -6,6 +6,7 @@ module.exports = {
         user: puertos.DB_USER,
         password: puertos.DB_PASSWORD,
         database: puertos.DB_NAME,
-        port: puertos.DB_PORT
+        port: puertos.DB_PORT,
+        ssl: true
     }
 };
